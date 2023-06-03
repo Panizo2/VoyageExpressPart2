@@ -71,7 +71,7 @@ $_SESSION['username'];
 <div class="container">
 <h3>Bem-Vindo,  <span><?=$_SESSION['name'];?></span></h3>
 <p>Seu e-mail de login é:<h6><?=$_SESSION['username'];?></h6></p>
-<a href="index.php" class="btn">Sair</a>
+<a href="login.php" class="btn">Sair</a>
   <br>
   <br>
 <a href="index2.php" class="btn">Acessar Site</a>

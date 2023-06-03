@@ -4,28 +4,28 @@ include_once('conexao.php');
 
 if (isset($_POST['login'])) {
 
-    $username = $_POST['username'];
+    $email = $_POST['email'];
     $password = md5($_POST['password']);
 
-    $sql = "SELECT * FROM `tbl_user` WHERE `username`='$username' OR `name`='$username' AND `password`='$password'";
+    $sql = "SELECT * FROM `tbl_user` WHERE `email`='$email' AND `password`='$password'";
     $result = mysqli_query($conn, $sql);
 
-    if (empty($_POST['username']) && empty($_POST['password'])) {
-        $error_message = "Por favor, preencha o usuário e a senha.";
+    if (empty($_POST['email']) && empty($_POST['password'])) {
+        $error_message = "Por favor, preencha o email e a senha.";
     } elseif (empty($_POST['password'])) {
         $error_message = "Por favor, preencha a senha.";
-    } elseif (empty($_POST['username'])) {
-        $error_message = "Por favor, preencha o usuário.";
+    } elseif (empty($_POST['email'])) {
+        $error_message = "Por favor, preencha o email.";
     } else {
         if (mysqli_num_rows($result) > 0) {
             $row = mysqli_fetch_array($result);
             $name = $row['name'];
-            $username = $row['username'];
+            $email = $row['email'];
             $password = $row['password'];
 
-            if ($username == $username && $password == $password) {
+            if ($email == $email && $password == $password) {
                 $_SESSION['name'] = $name;
-                $_SESSION['username'] = $username;
+                $_SESSION['email'] = $email;
                 $_SESSION['password'] = $password;
                 $_SESSION['login_success'] = true; // Adiciona a flag de sucesso ao fazer login
                 header('location:index2.php');
@@ -74,6 +74,7 @@ if (isset($_POST['login'])) {
         echo '<div id="error-message" class="error-message">' . $error_message . '</div>';
     }
     ?>
+    
 
     <div class="content">
     <!doctype html>
@@ -98,7 +99,7 @@ if (isset($_POST['login'])) {
     <div class="container py-5 h-100">
       <div class="row d-flex align-items-center justify-content-center h-100">
         <div class="col-md-8 col-lg-7 col-xl-6">
-          <img src="login.png" class="img-fluid" alt="Phone image" height="300px" width="600px">
+          <img src="img/login.jpg" class="img-fluid" alt="Phone image" height="300px" width="600px">
         </div>
         <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
           <form action="login.php" method="post">
@@ -106,7 +107,7 @@ if (isset($_POST['login'])) {
             <!-- Email input -->
             <div class="form-outline mb-4">
               <label class="form-label" for="form1Example13"> <i class="bi bi-person-circle"></i>Email</label>
-              <input type="email" id="form1Example13" class="form-control form-control-lg py-3" name="username" autocomplete="off" placeholder="insira seu e-mail" style="border-radius:25px ;" />
+              <input type="email" id="form1Example13" class="form-control form-control-lg py-3" name="email" autocomplete="off" placeholder="insira seu e-mail" style="border-radius:25px ;" />
 
             </div>
 
@@ -121,11 +122,12 @@ if (isset($_POST['login'])) {
             <!-- Submit button -->
             <!-- <button type="submit" class="btn btn-primary btn-lg">Login in</button> -->
             <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-              <input type="submit" value="Entrar" name="login" class="btn btn-warning btn-lg text-light my-2 py-3" style="width:100% ; border-radius: 30px; font-weight:600;" />
-            </div>
+  <input type="submit" value="Entrar" name="login" class="btn btn-primary btn-lg text-light my-2 py-3" style="width:100% ; border-radius: 30px; font-weight:600;" />
+</div>
 
-          </form><br>
-          <p align="center">Não tenho conta <a href="registro.php" class="text-warning" style="font-weight:600;text-decoration:none;"> Registre Aqui</a></p>
+</form><br>
+<p align="center">Não tenho conta <a href="registro.php" class="text-primary" style="font-weight: 600; text-decoration: none; color: blue;"> Registre Aqui</a></p>
+
         </div>
       </div>
     </div>

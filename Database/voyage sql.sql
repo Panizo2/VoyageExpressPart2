@@ -28,11 +28,18 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `tbl_user` (
-  `id` int(11) NOT NULL,
+  `CPF` varchar(100) NOT NULL primary key,
   `name` varchar(100) NOT NULL,
-  `username` varchar(100) NOT NULL,
+  `CEP` varchar (70) NOT NULL,
+  `City` varchar(150) NOT NULL,
+  `State` varchar (50) NOT NULL,
+  `Address` varchar(200) NOT NULL,
+  `StreetNumber` int NOT NULL,
+  `email` varchar(100) NOT NULL,
   `password` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+select * from `tbl_user`;
 
 --
 -- Indexes for dumped tables
@@ -41,8 +48,6 @@ CREATE TABLE `tbl_user` (
 --
 -- Indexes for table `tbl_user`
 --
-ALTER TABLE `tbl_user`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -51,9 +56,7 @@ ALTER TABLE `tbl_user`
 --
 -- AUTO_INCREMENT for table `tbl_user`
 --
-ALTER TABLE `tbl_user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
-COMMIT;
+
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
