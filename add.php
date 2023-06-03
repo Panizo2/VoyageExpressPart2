@@ -1,3 +1,4 @@
+
 <?php
 include_once('conexao.php');
 
@@ -10,8 +11,7 @@ if(isset($_POST['register']))
     $sql   ="INSERT INTO `tbl_user`(`name`, `username`, `password`) VALUES ('$name','$username','$pass')";
     $result=mysqli_query($conn,$sql);
     if($result){ 
-    header('location:index.php');
-    echo"<script>alert('Novo usuario registrado com sucesso');</script>";   
+    header('location:login.php');
     }else{
         die(mysqli_error($conn)) ;
     }
