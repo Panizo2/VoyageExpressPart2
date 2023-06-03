@@ -184,6 +184,7 @@
                       
   <input type="submit" href="login.php" value="Registre" name="register" class="btn btn-primary btn-lg text-light my-2 py-3" style="width: 100%; border-radius: 30px; font-weight: 600;" style="border-radius: 25px;" />
 </div>
+
 </form>
 <p align="center">Já possui conta? <a href="login.php" class="text-primary" style="font-weight: 600; text-decoration: none; color: blue;">Login</a></p>
 </div>
