@@ -147,7 +147,7 @@ include_once('conexao.php');
           <a href="contato.php" class="nav-link">Contato</a>
         </li>
         <li class="nav-item">
-        <a href="index.php" class="nav-link">Sair</a>
+        <a href="login.php" class="nav-link">Sair</a>
         </li>
         <a>
             <t>
