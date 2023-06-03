@@ -4,28 +4,28 @@ include_once('conexao.php');
 
 if (isset($_POST['login'])) {
 
-    $username = $_POST['username'];
+    $email = $_POST['email'];
     $password = md5($_POST['password']);
 
-    $sql = "SELECT * FROM `tbl_user` WHERE `username`='$username' OR `name`='$username' AND `password`='$password'";
+    $sql = "SELECT * FROM `tbl_user` WHERE `email`='$email' AND `password`='$password'";
     $result = mysqli_query($conn, $sql);
 
-    if (empty($_POST['username']) && empty($_POST['password'])) {
-        $error_message = "Por favor, preencha o usuário e a senha.";
+    if (empty($_POST['email']) && empty($_POST['password'])) {
+        $error_message = "Por favor, preencha o email e a senha.";
     } elseif (empty($_POST['password'])) {
         $error_message = "Por favor, preencha a senha.";
-    } elseif (empty($_POST['username'])) {
-        $error_message = "Por favor, preencha o usuário.";
+    } elseif (empty($_POST['email'])) {
+        $error_message = "Por favor, preencha o email.";
     } else {
         if (mysqli_num_rows($result) > 0) {
             $row = mysqli_fetch_array($result);
             $name = $row['name'];
-            $username = $row['username'];
+            $email = $row['email'];
             $password = $row['password'];
 
-            if ($username == $username && $password == $password) {
+            if ($email == $email && $password == $password) {
                 $_SESSION['name'] = $name;
-                $_SESSION['username'] = $username;
+                $_SESSION['email'] = $email;
                 $_SESSION['password'] = $password;
                 $_SESSION['login_success'] = true; // Adiciona a flag de sucesso ao fazer login
                 header('location:index2.php');
@@ -107,7 +107,7 @@ if (isset($_POST['login'])) {
             <!-- Email input -->
             <div class="form-outline mb-4">
               <label class="form-label" for="form1Example13"> <i class="bi bi-person-circle"></i>Email</label>
-              <input type="email" id="form1Example13" class="form-control form-control-lg py-3" name="username" autocomplete="off" placeholder="insira seu e-mail" style="border-radius:25px ;" />
+              <input type="email" id="form1Example13" class="form-control form-control-lg py-3" name="email" autocomplete="off" placeholder="insira seu e-mail" style="border-radius:25px ;" />
 
             </div>
 

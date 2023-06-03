@@ -2,7 +2,7 @@
 $server = 'localhost';
 $username = 'root';
 $password = '';
-$database = 'voyage sql';
+$database = 'voyagesqlserver';
 
 if (isset($_POST))
 
