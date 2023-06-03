@@ -74,6 +74,7 @@ if (isset($_POST['login'])) {
         echo '<div id="error-message" class="error-message">' . $error_message . '</div>';
     }
     ?>
+    
 
     <div class="content">
     <!doctype html>
@@ -98,7 +99,7 @@ if (isset($_POST['login'])) {
     <div class="container py-5 h-100">
       <div class="row d-flex align-items-center justify-content-center h-100">
         <div class="col-md-8 col-lg-7 col-xl-6">
-          <img src="login.png" class="img-fluid" alt="Phone image" height="300px" width="600px">
+          <img src="img/login.jpg" class="img-fluid" alt="Phone image" height="300px" width="600px">
         </div>
         <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
           <form action="login.php" method="post">
@@ -121,11 +122,12 @@ if (isset($_POST['login'])) {
             <!-- Submit button -->
             <!-- <button type="submit" class="btn btn-primary btn-lg">Login in</button> -->
             <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-              <input type="submit" value="Entrar" name="login" class="btn btn-warning btn-lg text-light my-2 py-3" style="width:100% ; border-radius: 30px; font-weight:600;" />
-            </div>
+  <input type="submit" value="Entrar" name="login" class="btn btn-primary btn-lg text-light my-2 py-3" style="width:100% ; border-radius: 30px; font-weight:600;" />
+</div>
 
-          </form><br>
-          <p align="center">Não tenho conta <a href="registro.php" class="text-warning" style="font-weight:600;text-decoration:none;"> Registre Aqui</a></p>
+</form><br>
+<p align="center">Não tenho conta <a href="registro.php" class="text-primary" style="font-weight: 600; text-decoration: none; color: blue;"> Registre Aqui</a></p>
+
         </div>
       </div>
     </div>
