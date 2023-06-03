@@ -73,7 +73,7 @@ include_once('conexao.php');?>
           <a href="contato.php" class="nav-link">Contato</a>
         </li>
         <li class="nav-item">
-        <a href="index.php" class="nav-link">Sair</a>
+        <a href="login.php" class="nav-link">Sair</a>
         </li>
         <a>
         <img class="user-avatar" src="img/usuario.png" alt="Foto do Usuário" width="40" height="40"></a>

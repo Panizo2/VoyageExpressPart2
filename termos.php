@@ -60,24 +60,36 @@
             <a href="noruega.php" class="dropdown-item">Noruega</a>
 
 
+            <?php
+            session_start();
+            include_once('conexao.php');?>
+                        
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a href="planos.php" class="nav-link">Planos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="contato.php" class="nav-link">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                    <a href="login.php" class="nav-link">Sair</a>
+                    </li>
+                    <a>
+                    <img class="user-avatar" src="img/usuario.png" alt="Foto do Usuário" width="40" height="40"></a>
+                    <li class="nav-item">
+                    <b class="nav-link">
+                        <?=$_SESSION['name'];?>
+                    </a></b>
+                    </li>
+                    <li class="nav-item">
+                      <a href="inscricao.php" class="btn btn-outline-primary ml-md-2">Inscreva-se</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            
 
-          </div>
-        </li>
-        <li class="nav-item">
-          <a href="planos.php" class="nav-link">Planos</a>
-        </li>
-        <li class="nav-item">
-          <a href="contato.php" class="nav-link">Contato</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link" data-toggle="modal" data-target="#modalLogin">Login</a>
-        </li>
-        <li class="nav-item">
-          <a href="inscricao.php" class="btn btn-outline-primary ml-md-2">Inscreva-se</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
 
   <section class="container">
     <div class="text-center my-5">
