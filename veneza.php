@@ -8,6 +8,13 @@
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
   <meta name="theme-color" content="#F8F9FA">
+  
+  <?php
+    session_start();
+    include 'header.php';
+    $Local = "Veneza";
+    ?>
+
 </head>
 <body>
 
@@ -38,56 +45,6 @@
     </div>
   </div>
 
-  <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top py-3 box-shadow">
-    <a href="index2.php" class="navbar-brand">
-      <img class ="AgencyNamePicture" src="img/voyage express.png" width="180" height="70">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Locais</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a href="california.php" class="dropdown-item">Califórnia</a>
-            <a href="paris.php" class="dropdown-item">Paris</a>
-            <a href="dublin.php" class="dropdown-item">Dublin</a>
-            <a href="veneza.php" class="dropdown-item">Veneza</a>
-            <a href="grecia.php" class="dropdown-item">Grécia</a>
-            <a href="seoul.php" class="dropdown-item">Seoul</a>
-            <a href="noruega.php" class="dropdown-item">Noruega</a>
-
-
-            <?php
-session_start();
-include_once('conexao.php');?>
-            
-          </div>
-        </li>
-        <li class="nav-item">
-          <a href="planos.php" class="nav-link">Planos</a>
-        </li>
-        <li class="nav-item">
-          <a href="contato.php" class="nav-link">Contato</a>
-        </li>
-        <li class="nav-item">
-        <a href="login.php" class="nav-link">Sair</a>
-        </li>
-        <a>
-        <img class="user-avatar" src="img/usuario.png" alt="Foto do Usuário" width="40" height="40"></a>
-        <li class="nav-item">
-        <b class="nav-link">
-            <?=$_SESSION['name'];?>
-        </a></b>
-        </li>
-        <li class="nav-item">
-          <a href="inscricao.php" class="btn btn-outline-primary ml-md-2">Inscreva-se</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
 
   <section class="container">
     <div class="text-center my-5">
@@ -112,48 +69,11 @@ include_once('conexao.php');?>
     </div>
   </section>
 
-  <section class="container">
-    <div class="text-center my-5">
-      <span class="h6 d-block text-uppercase">Descubra o que acontece na cidade</span>
-      <h1 class="display-4 text-primary">Próximos eventos</h1>
-    </div>
-    <table class="table table-hover table-responsive-md">
-      <thead>
-        <tr>
-          <th scope="col">Data</th>
-          <th scope="col">Evento</th>
-          <th scope="col">Local</th>
-          <th scope="col">Ingresso</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">08/04</th>
-          <td>Steve Vai</td>
-          <td>Palazzo del Turismo</td>
-          <td><a href="https://www.viagogo.com/Concert-Tickets/Hard-Rock-Metal/Steve-Vai-Tickets/E-151419931?PCID=partnerize_all&utm_campaign=1101l5856&utm_medium=publisher_program&utm_source=partnerize_jambase&utm_sub_medium=Content" class="btn btn-outline-secondary btn-sm">Comprar Ingresso</a></td>
-        </tr>
-        <tr>
-          <th scope="row">15/04</th>
-          <td>Venezia FC</td>
-          <td>Stadium Pier Luigi Penzo</td>
-          <td><a href="https://www.viagogo.com/Sports-Tickets/Soccer/More-Soccer/Serie-B/Venezia-FC-Tickets/E-150367197" class="btn btn-outline-secondary btn-sm">Comprar Ingresso</a></td>
-        </tr>
-        <tr>
-          <th scope="row">08/04</th>
-          <td>Myung-Whun Chung</td>
-          <td>Teatro La Fenice</td>
-          <td><a href="https://www.viagogo.com/Theater-Tickets/Classical/Myung-Whun-Chung-Tickets/E-150558574" class="btn btn-outline-secondary btn-sm">Comprar Ingresso</a></td>
-        </tr>
-        <tr>
-          <th scope="row">15/04</th>
-          <td>Orfeo ed Euridice</td>
-          <td>Teatro La Fenice</td>
-          <td><a href="https://www.viagogo.com/Theater-Tickets/Opera/Orfeo-ed-Euridice-Tickets/E-150558618" class="btn btn-outline-secondary btn-sm">Comprar Ingresso</a></td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+  <?php
+    
+    include 'TabelaPacotes.php';
+
+    ?>
 
   <div class="text-center my-5">
     <span class="h6 d-block text-uppercase">Veja um pouco sobre o seu destino</span>

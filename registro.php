@@ -11,6 +11,18 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 
+  <style>
+  .small-placeholder::placeholder {
+    font-size: 16px; 
+  }
+  .invalid-checkbox {
+    border-color: red;
+  }
+
+  
+</style>
+
+
   <script>
   // Função para formatar o CPF
   function formatarCPF(cpf) {
@@ -83,9 +95,20 @@
   document.getElementById("togglePassword").addEventListener("click", togglePasswordVisibility);
 </script>
 
+<script>
+  function validateTerms() {
+    var termsCheckbox = document.getElementById('termsCheckbox');
+    if (!termsCheckbox.checked) {
+      termsCheckbox.classList.add('invalid-checkbox');
+      event.preventDefault();
+    }
+  }
+</script>
+ 
 </head>
 
 <body>
+
 
   <section class="vh-100" style="background-color: #eee;">
     <div class="container h-100">
@@ -95,103 +118,83 @@
             <div class="card-body p-md-2">
               <div class="row justify-content-center">
               <p class="text-center h1 fw-bold mb-4 mx-1 mx-md-3 mt-3">Registro</p>
+              
                 <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
 
-                  
+                <form class="mx-1 mx-md-4" action="add.php" method="post">
+  <div class="d-flex flex-row align-items-center mb-4">
+    <div class="col mr-3">
+      <label class="form-label" for="form3Example1c">Nome</label>
+      <input type="text" id="form3Example1c" class="form-control form-control-lg small-placeholder" name="name" autocomplete="off" placeholder="Informe seu nome" />
+    </div>
+    <div class="col">
+      <label class="form-label" for="form3Example3d">CPF</label>
+      <input type="text" id="form3Example3d" class="form-control form-control-lg small-placeholder" name="cpf" autocomplete="off" placeholder="Informe seu CPF" oninput="atualizarCampoCPF()"/>
+    </div>
+  </div>
 
-                  <form class="mx-1 mx-md-4" action="add.php" method="post">
-                  <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fas fa-id-card fa-lg me-3 fa-fw"></i>
-                    <div class="form-outline flex-fill mb-0">
-                      <label class="form-label" for="form3Example3d"><i class="bi bi-credit-card-2-front-fill"></i> Seu CPF</label>
-                      <input type="text" id="form3Example3d" class="form-control form-control-lg py-3" name="cpf" autocomplete="off" placeholder="Informe seu CPF" style="border-radius:25px ;" oninput="atualizarCampoCPF()" />
+  <div class="d-flex flex-row align-items-center mb-4">
+    <div class="col mr-3">
+      <label class="form-label" for="form3Example3c">Email</label>
+      <input type="email" id="form3Example3c" class="form-control form-control-lg small-placeholder" name="email" autocomplete="off" placeholder="Informe seu email" />
+    </div>
+    <div class="col">
+      <label class="form-label" for="form3Example4c">Senha</label>
+      <div class="input-group">
+        <input type="password" id="form3Example4c" class="form-control form-control-lg small-placeholder" name="password" autocomplete="off" placeholder="Informe sua senha" />
+        <button class="btn btn-outline-secondary" type="button" id="togglePassword"><i class="bi bi-eye-fill"></i></button>
+      </div>
+    </div>
+  </div>
+  <h5 class="text-center">Localidade</h5>
+  <div class="d-flex flex-row align-items-center mb-4">
+    <div class="col mr-3">
+      <label class="form-label" for="form3Example3e">CEP</label>
+      <input type="text" id="form3Example3e" class="form-control form-control-lg small-placeholder" name="cep" autocomplete="off" placeholder="Informe seu CEP" oninput="buscarEndereco()" />
+    </div>
+    <div class="col">
+      <label class="form-label" for="form3Example3f">Cidade</label>
+      <input type="text" id="form3Example3f" class="form-control form-control-lg small-placeholder" name="cidade" autocomplete="off" placeholder="Sua cidade" readonly />
+    </div>
+  </div>
 
-                    </div>
-                  </div>
+  <div class="d-flex flex-row align-items-center mb-4">
+    <div class="col mr-3">
+      <label class="form-label" for="form3Example3g">Endereço</label>
+      <input type="text" id="form3Example3g" class="form-control form-control-lg small-placeholder" name="endereco" autocomplete="off" placeholder="Seu endereço" readonly />
+    </div>
+  </div>
 
-                    <div class="d-flex flex-row align-items-center mb-4">
-                      <i class="fas fa-user fa-lg me-3 fa-fw"></i>
-                      <div class="form-outline flex-fill mb-0">
-                        <label class="form-label" for="form3Example1c"><i class="bi bi-person-circle"></i> Nome Completo </label>
-                        <input type="text" id="form3Example1c" class="form-control form-control-lg py-3" name="name" autocomplete="off" placeholder="coloque seu nome" style="border-radius:25px ;" />
+  <div class="d-flex flex-row align-items-center mb-4">
+    <div class="col mr-3">
+      <label class="form-label" for="form3Example3h">Estado</label>
+      <input type="text" id="form3Example3h" class="form-control form-control-lg small-placeholder" name="estado" autocomplete="off" placeholder="Seu estado" readonly />
+    </div>
+    <div class="col">
+      <label class="form-label" for="form3Example3i">Número</label>
+      <input type="text" id="form3Example3i" class="form-control form-control-lg small-placeholder" name="numeroRua" autocomplete="off" placeholder="Informe o número da rua" />
+    </div>
+  </div>
 
-                      </div>
-                    </div>
+  <div class="form-check mb-4">
+    <input type="checkbox" name="terms" id="termsCheckbox" class="form-check-input">
+    <label class="form-check-label" for="termsCheckbox">Concordo com os <a href="termos.php">Termos e Condições</a>.</label>
+  </div>
 
-                    <div class="d-flex flex-row align-items-center mb-4">
-                      <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
-                      <div class="form-outline flex-fill mb-0">
-                        <label class="form-label" for="form3Example3c"><i class="bi bi-envelope-at-fill"></i> Seu E-mail</label>
-                        <input type="email" id="form3Example3c" class="form-control form-control-lg py-3" name="email" autocomplete="off" placeholder="coloque seu E-mail" style="border-radius:25px ;" />
-
-                      </div>
-                    </div>
-                    
-
-                    <div class="d-flex flex-row align-items-center mb-4">
-                      <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
-                      <div class="form-outline flex-fill mb-0">
-                        <label class="form-label" for="form3Example4c"><i class="bi bi-chat-left-dots-fill"></i> Senha</label>
-                        <div class="input-group">
-                          <input type="password" id="form3Example4c" class="form-control form-control-lg py-3" name="password" autocomplete="off" placeholder="coloque sua senha" style="border-radius:25px ;" />
-                          <button class="btn btn-outline-secondary" type="button" id="togglePassword"><i class="bi bi-eye-fill"></i></button>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="d-flex flex-row align-items-center mb-4">
-                      <i class="fas fa-map-marker-alt fa-lg me-3 fa-fw"></i>
-                      <div class="form-outline flex-fill mb-0">
-                        <label class="form-label" for="form3Example3e"><i class="bi bi-geo-alt-fill"></i> Seu CEP</label>
-                        <input type="text" id="form3Example3e" class="form-control form-control-lg py-3" name="cep" autocomplete="off" placeholder="Informe seu CEP" style="border-radius:25px ;" oninput="buscarEndereco()" />
-                      </div>
-                    </div>
-
-                    <div class="d-flex flex-row align-items-center mb-4">
-                      <i class="fas fa-city fa-lg me-3 fa-fw"></i>
-                      <div class="form-outline flex-fill mb-0">
-                        <label class="form-label" for="form3Example3f"><i class="bi bi-house-door-fill"></i> Cidade</label>
-                        <input type="text" id="form3Example3f" class="form-control form-control-lg py-3" name="cidade" autocomplete="off" placeholder="Informe sua cidade" style="border-radius:25px ;" readonly />
-                      </div>
-                    </div>
-
-                    <div class="d-flex flex-row align-items-center mb-4">
-                      <i class="fas fa-flag fa-lg me-3 fa-fw"></i>
-                      <div class="form-outline flex-fill mb-0">
-                        <label class="form-label" for="form3Example3g"><i class="bi bi-flag-fill"></i> Estado</label>
-                        <input type="text" id="form3Example3g" class="form-control form-control-lg py-3" name="estado" autocomplete="off" placeholder="Informe seu estado" style="border-radius:25px ;" readonly />
-                      </div>
-                    </div>
-
-                    <div class="d-flex flex-row align-items-center mb-4">
-                      <i class="fas fa-road fa-lg me-3 fa-fw"></i>
-                      <div class="form-outline flex-fill mb-0">
-                        <label class="form-label" for="form3Example3h"><i class="bi bi-geo-alt-fill"></i> Endereço</label>
-                        <input type="text" id="form3Example3h" class="form-control form-control-lg py-3" name="endereco" autocomplete="off" placeholder="Informe seu endereço" style="border-radius:25px ;" readonly />
-                      </div>
-                    </div>
-
-                    <div class="d-flex flex-row align-items-center mb-4">
-                      <i class="fas fa-sort-numeric-up-alt fa-lg me-3 fa-fw"></i>
-                      <div class="form-outline flex-fill mb-0">
-                        <label class="form-label" for="form3Example3i"><i class="bi bi-geo-alt-fill"></i> Número da Rua</label>
-                        <input type="text" id="form3Example3i" class="form-control form-control-lg py-3" name="numeroRua" autocomplete="off" placeholder="Informe o número da rua" style="border-radius:25px ;" />
-                      </div>
-                    </div>
-                    <input type="checkbox" name="" id="" class="form-check-input">
-            Concordo com os <a href="termos.php">Termos e Condições</a>.
-                    <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                      
-  <input type="submit" href="login.php" value="Registre" name="register" class="btn btn-primary btn-lg text-light my-2 py-3" style="width: 100%; border-radius: 30px; font-weight: 600;" style="border-radius: 25px;" />
-</div>
-
+  <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+    <input type="submit" href="login.php" value="Registre" name="register" class="btn btn-primary btn-lg text-light my-2 py-3" style="width: 100%; border-radius: 30px; font-weight: 600;" onclick="validateTerms()" />
+  </div>
 </form>
+
+
+
+
 <p align="center">Já possui conta? <a href="login.php" class="text-primary" style="font-weight: 600; text-decoration: none; color: blue;">Login</a></p>
 </div>
 
                 <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
 
-                  <img src="img/registro.jpg" class="img-fluid" alt="Sample image" height="300px" width="500px">
+                  <img src="img/registro.jpg" class="img-fluid" alt="Sample image" height="400px" width="4000px">
 
                 </div>
               </div>

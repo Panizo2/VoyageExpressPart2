@@ -1,6 +1,8 @@
 <?php
 session_start();
+
 include_once('conexao.php');
+
 
 if (isset($_POST['login'])) {
 
@@ -22,11 +24,13 @@ if (isset($_POST['login'])) {
             $name = $row['name'];
             $email = $row['email'];
             $password = $row['password'];
+            $CPF = $row['CPF'];
 
             if ($email == $email && $password == $password) {
                 $_SESSION['name'] = $name;
                 $_SESSION['email'] = $email;
                 $_SESSION['password'] = $password;
+                $_SESSION['CPF'] = $CPF;
                 $_SESSION['login_success'] = true; // Adiciona a flag de sucesso ao fazer login
                 header('location:index2.php');
             }
@@ -164,5 +168,6 @@ if (isset($_POST['login'])) {
             }
         }, 0);
     </script>
+    
 </body>
 </html>
