@@ -9,7 +9,7 @@
             <th scope="col">Lugar</th>
             <th scope="col">Nome</th>
             <th scope="col">Preço Base</th>
-            <th scope="col">Ação</th>
+            <th scope="col">Comprar</th>
         </tr>
     </thead>
     <tbody>
@@ -26,13 +26,13 @@
                 $lugar = $row["Lugar"];
                 $nome = $row["Nome"];
                 $precoBase = $row["PrecoBase"];
-                $comprarLink = "https://www.example.com/comprar-ingresso?lugar=$lugar&nome=$nome"; // Substitua pelo link correto
+                $comprarLink = "Compra.php"; // Substitua pelo link correto
 
                 echo "<tr>";
                 echo "<td>$lugar</td>";
                 echo "<td>$nome</td>";
                 echo "<td>$precoBase</td>";
-                echo "<td><a href=\"$comprarLink\" class=\"btn btn-outline-secondary btn-sm\">Comprar Ingresso</a></td>";
+                echo "<td><a href=\"$comprarLink\" class=\"btn btn-outline-secondary btn-sm\">Escolher $nome</a></td>";
                 echo "</tr>";
             }
         } else {

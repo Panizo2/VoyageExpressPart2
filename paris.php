@@ -13,6 +13,7 @@
     session_start();
     include 'header.php';
     $Local = "Paris";
+    $_SESSION['Local'] = $Local;
     ?>
 
 </head>
@@ -44,8 +45,6 @@
       </div>
     </div>
   </div>
-
-            
 
   <section class="container">
     <div class="text-center my-5">
