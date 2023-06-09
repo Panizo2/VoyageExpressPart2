@@ -45,6 +45,8 @@ include_once('conexao.php');
   <a class="dropdown-item" href="#">Perfil</a>
   <a class="dropdown-item" href="login.php">Sair</a>
   <a class="dropdown-item text-danger" href="Commands/ExcluirConta.php">Excluir</a>
+  <a class="dropdown-item text-primary" href="admin/index.php">Admin</a>
+
   </div>
 </li>
       </ul>
