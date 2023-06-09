@@ -162,14 +162,6 @@
       <div class="col-lg-5 p-4 align-self-center">
         <h1 class="display-4">Realize a viagem do seu sonho</h1>
         <p class="lead">O melhor local para viajar é com a Voyage Express, mais de 5.000 excursões concluídas.</p>
-        <form action="#">
-          <div class="input-group input-group-lg">
-            <input type="text" class="form-control" placeholder="Email" aria-label="Email">
-            <span class="input-group-append">
-              <a href="inscricao.php" class="btn btn-primary btn-lg d-block">Inscreva-se</a>
-            </span>
-          </div>
-        </form>
       </div>
     </div>
   </section>

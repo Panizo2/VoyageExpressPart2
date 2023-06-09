@@ -10,6 +10,12 @@ if (isset($_SESSION['CPF'])) {
     mysqli_query($conn, $sql);
 }
 
+if (isset($_SESSION['logout_message'])) {
+    echo '<div id="logout-message" class="error-message">' . $_SESSION['logout_message'] . '</div>';
+    unset($_SESSION['logout_message']); // Remove a mensagem para não repeti-la
+}
+
+$_SESSION['account_deleted'] = true;
 // Limpe as informações da sessão e redirecione para a tela de login
 session_unset();
 session_destroy();
