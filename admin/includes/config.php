@@ -13,4 +13,13 @@ catch (PDOException $e)
 {
 exit("Error: " . $e->getMessage());
 }
+<<<<<<< Updated upstream
 ?>
+=======
+<<<<<<< HEAD
+?>
+
+=======
+?>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes

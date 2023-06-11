@@ -89,20 +89,51 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 <!--heder end here-->
 	<ol class="breadcrumb">
+<<<<<<< Updated upstream
                 <li class="breadcrumb-item"><a href="index.html">Home</a><i class="fa fa-angle-right"></i>Update Package </li>
+=======
+<<<<<<< HEAD
+                <li class="breadcrumb-item"><a href="index.html">Home</a><i class="fa fa-angle-right"></i>Atualização Pacotes </li>
+=======
+                <li class="breadcrumb-item"><a href="index.html">Home</a><i class="fa fa-angle-right"></i>Update Package </li>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
             </ol>
 		<!--grid-->
  	<div class="grid-form">
  
 <!---->
   <div class="grid-form1">
+<<<<<<< Updated upstream
   	       <h3>Create Package</h3>
+=======
+<<<<<<< HEAD
+  	       <h3>Criar Pacote</h3>
+=======
+  	       <h3>Create Package</h3>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
   	        	  <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
 				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
   	         <div class="tab-content">
 						<div class="tab-pane active" id="horizontal-form">
 							<form class="form-horizontal" name="package" method="post" enctype="multipart/form-data">
 								<div class="form-group">
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+									<label for="focusedinput" class="col-sm-2 control-label">Nome do Pacote</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control1" name="packagename" id="packagename" placeholder="Criar pacote
+" required>
+									</div>
+								</div>
+<div class="form-group">
+									<label for="focusedinput" class="col-sm-2 control-label">Tipo de Pacote</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control1" name="packagetype" id="packagetype" placeholder=" Tipo de pacote, por exemplo - Pacote Família / Pacote Casal" required>
+=======
+>>>>>>> Stashed changes
 									<label for="focusedinput" class="col-sm-2 control-label">Package Name</label>
 									<div class="col-sm-8">
 										<input type="text" class="form-control1" name="packagename" id="packagename" placeholder="Create Package" required>
@@ -112,32 +143,84 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<label for="focusedinput" class="col-sm-2 control-label">Package Type</label>
 									<div class="col-sm-8">
 										<input type="text" class="form-control1" name="packagetype" id="packagetype" placeholder=" Package Type eg- Family Package / Couple Package" required>
+<<<<<<< Updated upstream
+=======
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 									</div>
 								</div>
 
 <div class="form-group">
+<<<<<<< Updated upstream
 									<label for="focusedinput" class="col-sm-2 control-label">Package Location</label>
 									<div class="col-sm-8">
 										<input type="text" class="form-control1" name="packagelocation" id="packagelocation" placeholder=" Package Location" required>
+=======
+<<<<<<< HEAD
+									<label for="focusedinput" class="col-sm-2 control-label">Localização</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control1" name="packagelocation" id="packagelocation" placeholder="Localização" required>
+=======
+									<label for="focusedinput" class="col-sm-2 control-label">Package Location</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control1" name="packagelocation" id="packagelocation" placeholder=" Package Location" required>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 									</div>
 								</div>
 
 <div class="form-group">
+<<<<<<< Updated upstream
 									<label for="focusedinput" class="col-sm-2 control-label">Package Price in USD</label>
 									<div class="col-sm-8">
 										<input type="text" class="form-control1" name="packageprice" id="packageprice" placeholder=" Package Price is USD" required>
+=======
+<<<<<<< HEAD
+									<label for="focusedinput" class="col-sm-2 control-label">Preço do Pacote</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control1" name="packageprice" id="packageprice" placeholder=" Preço em Real" required>
+=======
+									<label for="focusedinput" class="col-sm-2 control-label">Package Price in USD</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control1" name="packageprice" id="packageprice" placeholder=" Package Price is USD" required>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 									</div>
 								</div>
 
 <div class="form-group">
+<<<<<<< Updated upstream
 									<label for="focusedinput" class="col-sm-2 control-label">Package Features</label>
 									<div class="col-sm-8">
 										<input type="text" class="form-control1" name="packagefeatures" id="packagefeatures" placeholder="Package Features Eg-free Pickup-drop facility" required>
+=======
+<<<<<<< HEAD
+									<label for="focusedinput" class="col-sm-2 control-label">Recursos</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control1" name="packagefeatures" id="packagefeatures" placeholder="Recursos do pacote Serviço de coleta e entrega" required>
+=======
+									<label for="focusedinput" class="col-sm-2 control-label">Package Features</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control1" name="packagefeatures" id="packagefeatures" placeholder="Package Features Eg-free Pickup-drop facility" required>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 									</div>
 								</div>		
 
 
 <div class="form-group">
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+									<label for="focusedinput" class="col-sm-2 control-label">Detalhes do Pacote</label>
+									<div class="col-sm-8">
+										<textarea class="form-control" rows="5" cols="50" name="packagedetails" id="packagedetails" placeholder="Detalhes do Pacote" required></textarea> 
+									</div>
+								</div>															
+<div class="form-group">
+									<label for="focusedinput" class="col-sm-2 control-label">Imagem</label>
+=======
+>>>>>>> Stashed changes
 									<label for="focusedinput" class="col-sm-2 control-label">Package Details</label>
 									<div class="col-sm-8">
 										<textarea class="form-control" rows="5" cols="50" name="packagedetails" id="packagedetails" placeholder="Package Details" required></textarea> 
@@ -145,6 +228,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>															
 <div class="form-group">
 									<label for="focusedinput" class="col-sm-2 control-label">Package Image</label>
+<<<<<<< Updated upstream
+=======
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 									<div class="col-sm-8">
 										<input type="file" name="packageimage" id="packageimage" required>
 									</div>
@@ -152,9 +239,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 								<div class="row">
 			<div class="col-sm-8 col-sm-offset-2">
+<<<<<<< Updated upstream
 				<button type="submit" name="submit" class="btn-primary btn">Create</button>
 
 				<button type="reset" class="btn-inverse btn">Reset</button>
+=======
+<<<<<<< HEAD
+				<button type="submit" name="submit" class="btn-primary btn">Criar</button>
+
+				<button type="reset" class="btn-inverse btn">Resetar</button>
+=======
+				<button type="submit" name="submit" class="btn-primary btn">Create</button>
+
+				<button type="reset" class="btn-inverse btn">Reset</button>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 			</div>
 		</div>
 						

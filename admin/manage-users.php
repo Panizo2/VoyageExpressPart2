@@ -74,23 +74,52 @@ else{
 				</div>
 <!--heder end here-->
 <ol class="breadcrumb">
+<<<<<<< Updated upstream
                 <li class="breadcrumb-item"><a href="dashboard.php">Home</a><i class="fa fa-angle-right"></i>Manage Users</li>
+=======
+<<<<<<< HEAD
+                <li class="breadcrumb-item"><a href="dashboard.php">Home</a><i class="fa fa-angle-right"></i>Gerenciamento de Usuários</li>
+=======
+                <li class="breadcrumb-item"><a href="dashboard.php">Home</a><i class="fa fa-angle-right"></i>Manage Users</li>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
             </ol>
 <div class="agile-grids">	
 				<!-- tables -->
 				
 				<div class="agile-tables">
 					<div class="w3l-table-info">
+<<<<<<< Updated upstream
 					  <h2>Manage Users</h2>
+=======
+<<<<<<< HEAD
+					  <h2>Gerenciamento de Usuários</h2>
+=======
+					  <h2>Manage Users</h2>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 					    <table id="table">
 						<thead>
 						  <tr>
 						  <th>#</th>
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+							<th>Nome</th>
+							<th>Email</th>
+							<th>Data </th>
+							<th>Alteração Data</th>
+=======
+>>>>>>> Stashed changes
 							<th>Name</th>
 							<th>Mobile No.</th>
 							<th>Email Id</th>
 							<th>RegDate </th>
 							<th>Updation Date</th>
+<<<<<<< Updated upstream
+=======
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 						  </tr>
 						</thead>
 						<tbody>
@@ -106,7 +135,14 @@ foreach($results as $result)
 						  <tr>
 							<td><?php echo htmlentities($cnt);?></td>
 							<td><?php echo htmlentities($result->FullName);?></td>
+<<<<<<< Updated upstream
 							<td><?php echo htmlentities($result->MobileNumber);?></td>
+=======
+<<<<<<< HEAD
+=======
+							<td><?php echo htmlentities($result->MobileNumber);?></td>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 							<td><?php echo htmlentities($result->EmailId);?></td>
 							<td><?php echo htmlentities($result->RegDate);?></td>
 							<td><?php echo htmlentities($result->UpdationDate);?></td>

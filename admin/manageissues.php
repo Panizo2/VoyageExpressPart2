@@ -114,7 +114,16 @@ popUpWin = open(URLStr,'popUpWin', 'toolbar=no,location=no,directories=no,status
 				</div>
 <!--heder end here-->
 <ol class="breadcrumb">
+<<<<<<< Updated upstream
                 <li class="breadcrumb-item"><a href="dashboard.php">Home</a><i class="fa fa-angle-right"></i>Manage Issues</li>
+=======
+<<<<<<< HEAD
+                <li class="breadcrumb-item"><a href="dashboard.php">Home</a><i class="fa fa-angle-right"></i>Gerenciar problemas
+</li>
+=======
+                <li class="breadcrumb-item"><a href="dashboard.php">Home</a><i class="fa fa-angle-right"></i>Manage Issues</li>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
             </ol>
 <div class="agile-grids">	
 				<!-- tables -->
@@ -122,11 +131,31 @@ popUpWin = open(URLStr,'popUpWin', 'toolbar=no,location=no,directories=no,status
 				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
 				<div class="agile-tables">
 					<div class="w3l-table-info">
+<<<<<<< Updated upstream
 					  <h2>Manage Issues</h2>
+=======
+<<<<<<< HEAD
+					  <h2>Gerenciar problemas
+</h2>
+=======
+					  <h2>Manage Issues</h2>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 					    <table id="table">
 						<thead>
 						  <tr>
 						  <th>#</th>
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+							<th>Nome</th>
+							<th>Email</th>
+							<th>Problemas </th>
+							<th>Descrição </th>
+							<th>Data de Postagem </th>
+							<th>Ação </th>
+=======
+>>>>>>> Stashed changes
 							<th>Name</th>
 							<th>Mobile No.</th>
 							<th>Email Id</th>
@@ -134,6 +163,10 @@ popUpWin = open(URLStr,'popUpWin', 'toolbar=no,location=no,directories=no,status
 							<th>Description </th>
 							<th>Posting date </th>
 							<th>Action </th>
+<<<<<<< Updated upstream
+=======
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 							
 						  </tr>
 						</thead>
@@ -150,7 +183,14 @@ foreach($results as $result)
 						  <tr>
 							<td width="120">#00<?php echo htmlentities($result->id);?></td>
 							<td width="50"><?php echo htmlentities($result->fname);?></td>
+<<<<<<< Updated upstream
 								<td width="50"><?php echo htmlentities($result->mnumber);?></td>
+=======
+<<<<<<< HEAD
+=======
+								<td width="50"><?php echo htmlentities($result->mnumber);?></td>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 							<td width="50"><?php echo htmlentities($result->email);?></td>
 						
 							<td width="200"><?php echo htmlentities($result->issue);?></a></td>

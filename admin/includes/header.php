@@ -1,6 +1,14 @@
 <div class="header-main">
 					<div class="logo-w3-agile">
+<<<<<<< Updated upstream
 								<h1><a href="dashboard.php">VoyageExpress Dash</a></h1>
+=======
+<<<<<<< HEAD
+								<h1><a href="dashboard.php">VE Dash</a></h1>
+=======
+								<h1><a href="dashboard.php">VoyageExpress Dash</a></h1>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 							</div>
 				
 						
@@ -20,7 +28,15 @@
 											</div>	
 										</a>
 										<ul class="dropdown-menu drp-mnu">
+<<<<<<< Updated upstream
 											<li> <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a> </li>
+=======
+<<<<<<< HEAD
+											<li> <a href="logout.php"><i class="fa fa-sign-out"></i> Sair</a> </li>
+=======
+											<li> <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a> </li>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 										</ul>
 									</li>
 								</ul>

@@ -236,6 +236,13 @@ VALUES ('Noruega', 'Cruzeiro pelo Fiorde de Geiranger', 80.00, 4, 'Navegue pelo 
 
 
 select * from Pacotes;
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 --
 -- Indexes for dumped tables
 --
@@ -252,7 +259,14 @@ select * from Pacotes;
 -- AUTO_INCREMENT for table `tbl_user`
 --
 
+<<<<<<< Updated upstream
 
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

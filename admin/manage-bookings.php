@@ -116,7 +116,15 @@ $msg="Booking Confirm successfully";
 				</div>
 <!--heder end here-->
 <ol class="breadcrumb">
+<<<<<<< Updated upstream
                 <li class="breadcrumb-item"><a href="dashboard.php">Home</a><i class="fa fa-angle-right"></i>Manage Bookings</li>
+=======
+<<<<<<< HEAD
+                <li class="breadcrumb-item"><a href="dashboard.php">Home</a><i class="fa fa-angle-right"></i>Gerenciar Reservas</li>
+=======
+                <li class="breadcrumb-item"><a href="dashboard.php">Home</a><i class="fa fa-angle-right"></i>Manage Bookings</li>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
             </ol>
 <div class="agile-grids">	
 				<!-- tables -->
@@ -124,6 +132,23 @@ $msg="Booking Confirm successfully";
 				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
 				<div class="agile-tables">
 					<div class="w3l-table-info">
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+					  <h2>Gerenciar Reserva</h2>
+					    <table id="table">
+						<thead>
+						  <tr>
+						  <th>Reserva</th>
+							<th>Nome</th>
+							<th>Email</th>
+							<th>RegDate </th>
+							<th>De /Para </th>
+							<th>Comentario </th>
+							<th>Status </th>
+							<th>Ação </th>
+=======
+>>>>>>> Stashed changes
 					  <h2>Manage Bookings</h2>
 					    <table id="table">
 						<thead>
@@ -137,6 +162,10 @@ $msg="Booking Confirm successfully";
 							<th>Comment </th>
 							<th>Status </th>
 							<th>Action </th>
+<<<<<<< Updated upstream
+=======
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 						  </tr>
 						</thead>
 						<tbody>
@@ -152,7 +181,14 @@ foreach($results as $result)
 						  <tr>
 							<td>#BK-<?php echo htmlentities($result->bookid);?></td>
 							<td><?php echo htmlentities($result->fname);?></td>
+<<<<<<< Updated upstream
 							<td><?php echo htmlentities($result->mnumber);?></td>
+=======
+<<<<<<< HEAD
+=======
+							<td><?php echo htmlentities($result->mnumber);?></td>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 							<td><?php echo htmlentities($result->email);?></td>
 							<td><a href="update-package.php?pid=<?php echo htmlentities($result->pid);?>"><?php echo htmlentities($result->pckname);?></a></td>
 							<td><?php echo htmlentities($result->fdate);?> To <?php echo htmlentities($result->tdate);?></td>
@@ -178,9 +214,21 @@ echo "Canceled by User at " .$result->upddate;
 
 <?php if($result->status==2)
 {
+<<<<<<< Updated upstream
 	?><td>Cancelled</td>
 <?php } else {?>
 <td><a href="manage-bookings.php?bkid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to cancel booking')" >Cancel</a> / <a href="manage-bookings.php?bckid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to cancel booking')" >Confirm</a></td>
+=======
+<<<<<<< HEAD
+	?><td>Cancelado</td>
+<?php } else {?>
+<td><a href="manage-bookings.php?bkid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to cancel booking')" >Cancelar</a> / <a href="manage-bookings.php?bckid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to cancel booking')" >Confirmar</a></td>
+=======
+	?><td>Cancelled</td>
+<?php } else {?>
+<td><a href="manage-bookings.php?bkid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to cancel booking')" >Cancel</a> / <a href="manage-bookings.php?bckid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to cancel booking')" >Confirm</a></td>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 <?php }?>
 
 						  </tr>
