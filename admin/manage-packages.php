@@ -74,24 +74,55 @@ else{
 				</div>
 <!--heder end here-->
 <ol class="breadcrumb">
+<<<<<<< Updated upstream
                 <li class="breadcrumb-item"><a href="dashboard.php">Home</a><i class="fa fa-angle-right"></i>Manage Packages</li>
+=======
+<<<<<<< HEAD
+                <li class="breadcrumb-item"><a href="dashboard.php">Home</a><i class="fa fa-angle-right"></i>Gerenciamento de Pacotes</li>
+=======
+                <li class="breadcrumb-item"><a href="dashboard.php">Home</a><i class="fa fa-angle-right"></i>Manage Packages</li>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
             </ol>
 <div class="agile-grids">	
 				<!-- tables -->
 				
 				<div class="agile-tables">
 					<div class="w3l-table-info">
+<<<<<<< Updated upstream
 					  <h2>Manage Packages</h2>
+=======
+<<<<<<< HEAD
+					  <h2>Gerenciamento de Pacotes</h2>
+=======
+					  <h2>Manage Packages</h2>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 					    <table id="table">
 						<thead>
 						  <tr>
 						  <th>#</th>
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+							<th >Nome</th>
+							<th>Tipo</th>
+							<th>Localização</th>
+							<th>Preço</th>
+							<th>Data de Criação</th>
+							<th>Ação</th>
+=======
+>>>>>>> Stashed changes
 							<th >Name</th>
 							<th>Type</th>
 							<th>Location</th>
 							<th>Price</th>
 							<th>Creation Date</th>
 							<th>Action</th>
+<<<<<<< Updated upstream
+=======
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 						  </tr>
 						</thead>
 						<tbody>
@@ -112,7 +143,15 @@ foreach($results as $result)
 							<td><?php echo htmlentities($result->PackageLocation);?></td>
 							<td>$<?php echo htmlentities($result->PackagePrice);?></td>
 							<td><?php echo htmlentities($result->Creationdate);?></td>
+<<<<<<< Updated upstream
 							<td><a href="update-package.php?pid=<?php echo htmlentities($result->PackageId);?>"><button type="button" class="btn btn-primary btn-block">View Details</button></a></td>
+=======
+<<<<<<< HEAD
+							<td><a href="update-package.php?pid=<?php echo htmlentities($result->PackageId);?>"><button type="button" class="btn btn-primary btn-block">Detalhes</button></a></td>
+=======
+							<td><a href="update-package.php?pid=<?php echo htmlentities($result->PackageId);?>"><button type="button" class="btn btn-primary btn-block">View Details</button></a></td>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 						  </tr>
 						 <?php $cnt=$cnt+1;} }?>
 						</tbody>

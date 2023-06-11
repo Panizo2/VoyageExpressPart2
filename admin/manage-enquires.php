@@ -102,7 +102,16 @@ $msg="Enquiry  successfully read";
 				</div>
 <!--heder end here-->
 <ol class="breadcrumb">
+<<<<<<< Updated upstream
                 <li class="breadcrumb-item"><a href="dashboard.php">Home</a><i class="fa fa-angle-right"></i>Manage Enquiries</li>
+=======
+<<<<<<< HEAD
+                <li class="breadcrumb-item"><a href="dashboard.php">Home</a><i class="fa fa-angle-right"></i>Gerenciar Consultas
+</li>
+=======
+                <li class="breadcrumb-item"><a href="dashboard.php">Home</a><i class="fa fa-angle-right"></i>Manage Enquiries</li>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
             </ol>
 <div class="agile-grids">	
 				<!-- tables -->
@@ -110,11 +119,32 @@ $msg="Enquiry  successfully read";
 				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
 				<div class="agile-tables">
 					<div class="w3l-table-info">
+<<<<<<< Updated upstream
 					  <h2>Manage Enquiries</h2>
+=======
+<<<<<<< HEAD
+					  <h2>Gerenciar Consultas
+</h2>
+=======
+					  <h2>Manage Enquiries</h2>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 					    <table id="table">
 						<thead>
 						  <tr>
 						  <th>Ticket id</th>
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+							<th>Nome</th>
+							<th>Email</th>
+							
+							<th>Assunto </th>
+							<th>Descrição </th>
+							<th>Data de Postagem </th>
+							<th>Ação </th>
+=======
+>>>>>>> Stashed changes
 							<th>Name</th>
 							<th>Mobile No./ Email</th>
 							
@@ -122,6 +152,10 @@ $msg="Enquiry  successfully read";
 							<th>Description </th>
 							<th>Posting date </th>
 							<th>Action </th>
+<<<<<<< Updated upstream
+=======
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 							
 						  </tr>
 						</thead>
@@ -148,7 +182,15 @@ foreach($results as $result)
 								<td width="50"><?php echo htmlentities($result->PostingDate);?></td>
 								<?php if($result->Status==1)
 {
+<<<<<<< Updated upstream
 	?><td>Read</td>
+=======
+<<<<<<< HEAD
+	?><td>Pronto</td>
+=======
+	?><td>Read</td>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 <?php } else {?>
 
 <td><a href="manage-enquires.php?eid=<?php echo htmlentities($result->id);?>" onclick="return confirm('Do you really want to read')" >Pending</a>

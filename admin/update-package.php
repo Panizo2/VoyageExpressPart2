@@ -80,7 +80,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 <!--heder end here-->
 	<ol class="breadcrumb">
+<<<<<<< Updated upstream
                 <li class="breadcrumb-item"><a href="dashboard.php">Home</a><i class="fa fa-angle-right"></i>Update Tour Package </li>
+=======
+<<<<<<< HEAD
+                <li class="breadcrumb-item"><a href="dashboard.php">Home</a><i class="fa fa-angle-right"></i>Atualizar Pacote Turístico
+</li>
+=======
+                <li class="breadcrumb-item"><a href="dashboard.php">Home</a><i class="fa fa-angle-right"></i>Update Tour Package </li>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
             </ol>
 		<!--grid-->
  	<div class="grid-form">
@@ -108,6 +117,21 @@ foreach($results as $result)
 
 							<form class="form-horizontal" name="package" method="post" enctype="multipart/form-data">
 								<div class="form-group">
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+									<label for="focusedinput" class="col-sm-2 control-label">Nome do Pacote</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control1" name="packagename" id="packagename" placeholder="Criar Pacote" value="<?php echo htmlentities($result->PackageName);?>" required>
+									</div>
+								</div>
+<div class="form-group">
+									<label for="focusedinput" class="col-sm-2 control-label">Tipo do Pacote</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control1" name="packagetype" id="packagetype" placeholder="Tipo de pacote, por exemplo - Pacote Família / Pacote Casal
+" value="<?php echo htmlentities($result->PackageType);?>" required>
+=======
+>>>>>>> Stashed changes
 									<label for="focusedinput" class="col-sm-2 control-label">Package Name</label>
 									<div class="col-sm-8">
 										<input type="text" class="form-control1" name="packagename" id="packagename" placeholder="Create Package" value="<?php echo htmlentities($result->PackageName);?>" required>
@@ -117,32 +141,84 @@ foreach($results as $result)
 									<label for="focusedinput" class="col-sm-2 control-label">Package Type</label>
 									<div class="col-sm-8">
 										<input type="text" class="form-control1" name="packagetype" id="packagetype" placeholder=" Package Type eg- Family Package / Couple Package" value="<?php echo htmlentities($result->PackageType);?>" required>
+<<<<<<< Updated upstream
+=======
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 									</div>
 								</div>
 
 <div class="form-group">
+<<<<<<< Updated upstream
 									<label for="focusedinput" class="col-sm-2 control-label">Package Location</label>
 									<div class="col-sm-8">
 										<input type="text" class="form-control1" name="packagelocation" id="packagelocation" placeholder=" Package Location" value="<?php echo htmlentities($result->PackageLocation);?>" required>
+=======
+<<<<<<< HEAD
+									<label for="focusedinput" class="col-sm-2 control-label">Localização</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control1" name="packagelocation" id="packagelocation" placeholder=" Localização do Pacote" value="<?php echo htmlentities($result->PackageLocation);?>" required>
+=======
+									<label for="focusedinput" class="col-sm-2 control-label">Package Location</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control1" name="packagelocation" id="packagelocation" placeholder=" Package Location" value="<?php echo htmlentities($result->PackageLocation);?>" required>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 									</div>
 								</div>
 
 <div class="form-group">
+<<<<<<< Updated upstream
 									<label for="focusedinput" class="col-sm-2 control-label">Package Price in USD</label>
 									<div class="col-sm-8">
 										<input type="text" class="form-control1" name="packageprice" id="packageprice" placeholder=" Package Price is USD" value="<?php echo htmlentities($result->PackagePrice);?>" required>
+=======
+<<<<<<< HEAD
+									<label for="focusedinput" class="col-sm-2 control-label">Preço do Pacote</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control1" name="packageprice" id="packageprice" placeholder="Preço do Pacote em Real" value="<?php echo htmlentities($result->PackagePrice);?>" required>
+=======
+									<label for="focusedinput" class="col-sm-2 control-label">Package Price in USD</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control1" name="packageprice" id="packageprice" placeholder=" Package Price is USD" value="<?php echo htmlentities($result->PackagePrice);?>" required>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 									</div>
 								</div>
 
 <div class="form-group">
+<<<<<<< Updated upstream
 									<label for="focusedinput" class="col-sm-2 control-label">Package Features</label>
 									<div class="col-sm-8">
 										<input type="text" class="form-control1" name="packagefeatures" id="packagefeatures" placeholder="Package Features Eg-free Pickup-drop facility" value="<?php echo htmlentities($result->PackageFetures);?>" required>
+=======
+<<<<<<< HEAD
+									<label for="focusedinput" class="col-sm-2 control-label">Recursos</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control1" name="packagefeatures" id="packagefeatures" placeholder="Recursos do pacote Serviço de coleta e entrega" value="<?php echo htmlentities($result->PackageFetures);?>" required>
+=======
+									<label for="focusedinput" class="col-sm-2 control-label">Package Features</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control1" name="packagefeatures" id="packagefeatures" placeholder="Package Features Eg-free Pickup-drop facility" value="<?php echo htmlentities($result->PackageFetures);?>" required>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 									</div>
 								</div>		
 
 
 <div class="form-group">
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+									<label for="focusedinput" class="col-sm-2 control-label">Detalhes do Pacote</label>
+									<div class="col-sm-8">
+										<textarea class="form-control" rows="5" cols="50" name="packagedetails" id="packagedetails" placeholder="Detalhes do Pacote" required><?php echo htmlentities($result->PackageDetails);?></textarea> 
+									</div>
+								</div>															
+<div class="form-group">
+<label for="focusedinput" class="col-sm-2 control-label">Imagem</label>
+=======
+>>>>>>> Stashed changes
 									<label for="focusedinput" class="col-sm-2 control-label">Package Details</label>
 									<div class="col-sm-8">
 										<textarea class="form-control" rows="5" cols="50" name="packagedetails" id="packagedetails" placeholder="Package Details" required><?php echo htmlentities($result->PackageDetails);?></textarea> 
@@ -150,13 +226,25 @@ foreach($results as $result)
 								</div>															
 <div class="form-group">
 <label for="focusedinput" class="col-sm-2 control-label">Package Image</label>
+<<<<<<< Updated upstream
+=======
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 <div class="col-sm-8">
 <img src="pacakgeimages/<?php echo htmlentities($result->PackageImage);?>" width="200">&nbsp;&nbsp;&nbsp;<a href="change-image.php?imgid=<?php echo htmlentities($result->PackageId);?>">Change Image</a>
 </div>
 </div>
 
 <div class="form-group">
+<<<<<<< Updated upstream
 									<label for="focusedinput" class="col-sm-2 control-label">Last Updation Date</label>
+=======
+<<<<<<< HEAD
+									<label for="focusedinput" class="col-sm-2 control-label">Ultima Data de Atualização</label>
+=======
+									<label for="focusedinput" class="col-sm-2 control-label">Last Updation Date</label>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 									<div class="col-sm-8">
 <?php echo htmlentities($result->UpdationDate);?>
 									</div>
@@ -165,7 +253,15 @@ foreach($results as $result)
 
 								<div class="row">
 			<div class="col-sm-8 col-sm-offset-2">
+<<<<<<< Updated upstream
 				<button type="submit" name="submit" class="btn-primary btn">Update</button>
+=======
+<<<<<<< HEAD
+				<button type="submit" name="submit" class="btn-primary btn">Atualizar</button>
+=======
+				<button type="submit" name="submit" class="btn-primary btn">Update</button>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 			</div>
 		</div>
 						

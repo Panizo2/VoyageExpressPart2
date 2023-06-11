@@ -107,20 +107,50 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 				</div>
 <!--heder end here-->
 	<ol class="breadcrumb">
+<<<<<<< Updated upstream
                 <li class="breadcrumb-item"><a href="dashboard.php">Home</a><i class="fa fa-angle-right"></i>Update Page Data </li>
+=======
+<<<<<<< HEAD
+                <li class="breadcrumb-item"><a href="dashboard.php">Home</a><i class="fa fa-angle-right"></i>Atualizar dados da página
+ </li>
+=======
+                <li class="breadcrumb-item"><a href="dashboard.php">Home</a><i class="fa fa-angle-right"></i>Update Page Data </li>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
             </ol>
 		<!--grid-->
  	<div class="grid-form">
  
 <!---->
   <div class="grid-form1">
+<<<<<<< Updated upstream
   	       <h3>Update Page Data</h3>
+=======
+<<<<<<< HEAD
+  	       <h3>Atualizar dados da página</h3>
+=======
+  	       <h3>Update Page Data</h3>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
   	        	  <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
 				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
   	         <div class="tab-content">
 						<div class="tab-pane active" id="horizontal-form">
 							<form class="form-horizontal" name="package" method="post" enctype="multipart/form-data">
 								<div class="form-group">
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+									<label for="focusedinput" class="col-sm-2 control-label">Selecionar Pagina</label>
+									<div class="col-sm-8">
+									   <select name="menu1" onChange="MM_jumpMenu('parent',this,0)">
+                  <option value="" selected="selected" class="form-control">Selecionar</option>
+                  <option value="manage-pages.php?type=terms">Termos e Condições</option>
+                  <option value="manage-pages.php?type=privacy">Politica e Privacidades</option>
+                  <option value="manage-pages.php?type=aboutus">Sobre Nós</option> 
+                  <option value="manage-pages.php?type=contact">Contatos</option>
+=======
+>>>>>>> Stashed changes
 									<label for="focusedinput" class="col-sm-2 control-label">Select page</label>
 									<div class="col-sm-8">
 									   <select name="menu1" onChange="MM_jumpMenu('parent',this,0)">
@@ -129,11 +159,22 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
                   <option value="manage-pages.php?type=privacy">privacy and policy</option>
                   <option value="manage-pages.php?type=aboutus">aboutus</option> 
                   <option value="manage-pages.php?type=contact">Contact us</option>
+<<<<<<< Updated upstream
+=======
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
                 </select>
 									</div>
 								</div>
 <div class="form-group">
+<<<<<<< Updated upstream
 									<label for="focusedinput" class="col-sm-2 control-label">Selected Page</label>
+=======
+<<<<<<< HEAD
+=======
+									<label for="focusedinput" class="col-sm-2 control-label">Selected Page</label>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 									<div class="col-sm-8">
 									<?php
 			
@@ -195,7 +236,15 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 
 
 <div class="form-group">
+<<<<<<< Updated upstream
 									<label for="focusedinput" class="col-sm-2 control-label">Package Details</label>
+=======
+<<<<<<< HEAD
+									<label for="focusedinput" class="col-sm-2 control-label">Detalhes do Pacote</label>
+=======
+									<label for="focusedinput" class="col-sm-2 control-label">Package Details</label>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 									<div class="col-sm-8">
 
 
@@ -223,7 +272,15 @@ echo htmlentities($result->detail);
 
 								<div class="row">
 			<div class="col-sm-8 col-sm-offset-2">
+<<<<<<< Updated upstream
 				<button type="submit" name="submit" value="Update" id="submit" class="btn-primary btn">Update</button>
+=======
+<<<<<<< HEAD
+				<button type="submit" name="submit" value="Update" id="submit" class="btn-primary btn">Atualizar</button>
+=======
+				<button type="submit" name="submit" value="Update" id="submit" class="btn-primary btn">Update</button>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 
 		
 			</div>

@@ -49,7 +49,15 @@ else{
 								<i class="glyphicon glyphicon-user" aria-hidden="true"></i>
 							</div>
 							<div class="four-text">
+<<<<<<< Updated upstream
 								<h3>User</h3>
+=======
+<<<<<<< HEAD
+								<h3>Usuário</h3>
+=======
+								<h3>User</h3>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 
 								<?php $sql = "SELECT id from tblusers";
 $query = $dbh -> prepare($sql);
@@ -69,7 +77,15 @@ $cnt=$query->rowCount();
 								<i class="glyphicon glyphicon-list-alt" aria-hidden="true"></i>
 							</div>
 							<div class="four-text">
+<<<<<<< Updated upstream
 								<h3>Bookings</h3>
+=======
+<<<<<<< HEAD
+								<h3>Reservas</h3>
+=======
+								<h3>Bookings</h3>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 										<?php $sql1 = "SELECT BookingId from tblbooking";
 $query1 = $dbh -> prepare($sql1);
 $query1->execute();
@@ -88,7 +104,15 @@ $cnt1=$query1->rowCount();
 								<i class="glyphicon glyphicon-folder-open" aria-hidden="true"></i>
 							</div>
 							<div class="four-text">
+<<<<<<< Updated upstream
 								<h3>Enquiries</h3>
+=======
+<<<<<<< HEAD
+								<h3>Inquéritos</h3>
+=======
+								<h3>Enquiries</h3>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 												<?php $sql2 = "SELECT id from tblenquiry";
 $query2= $dbh -> prepare($sql2);
 $query2->execute();
@@ -107,7 +131,16 @@ $cnt2=$query2->rowCount();
 								<i class="glyphicon glyphicon-briefcase" aria-hidden="true"></i>
 							</div>
 							<div class="four-text">
+<<<<<<< Updated upstream
 								<h3>Toatal packages</h3>
+=======
+<<<<<<< HEAD
+								<h3>Pacotes Totais
+</h3>
+=======
+								<h3>Toatal packages</h3>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 																	<?php $sql3 = "SELECT PackageId from tbltourpackages";
 $query3= $dbh -> prepare($sql3);
 $query3->execute();
@@ -130,7 +163,15 @@ $cnt3=$query3->rowCount();
 								<i class="glyphicon glyphicon-folder-open" aria-hidden="true"></i>
 							</div>
 							<div class="four-text">
+<<<<<<< Updated upstream
 								<h3>Issues Riaised</h3>
+=======
+<<<<<<< HEAD
+								<h3>Problemas</h3>
+=======
+								<h3>Issues Riaised</h3>
+>>>>>>> ff6dca633bbbce3c87cc9e4fa17b8722c8bd48ed
+>>>>>>> Stashed changes
 												<?php $sql5 = "SELECT id from tblissues";
 $query5= $dbh -> prepare($sql5);
 $query5->execute();
