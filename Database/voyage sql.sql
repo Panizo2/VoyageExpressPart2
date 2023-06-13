@@ -74,6 +74,14 @@ CREATE TABLE passeios (
 
 select * from passeios;
 
+CREATE TABLE EstiloVoo (
+	id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    Nome VARCHAR (100) NOT NULL,
+    Preco DECIMAL(8, 2) NOT NULL
+);
+
+select * from EstiloVoo;
+
 CREATE TABLE Compra (
   id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
   CPF VARCHAR(100) NOT NULL,
@@ -82,18 +90,25 @@ CREATE TABLE Compra (
   passeios INT,
   data_ida DATE NOT NULL,
   data_volta DATE,
-  estilo_voo VARCHAR(100) NOT NULL,
+  estilo_voo INT,
   valor_final DECIMAL(8, 2) NOT NULL,
   status_pagamento VARCHAR(100) NOT NULL,
   FOREIGN KEY (CPF) REFERENCES tbl_user(CPF),
   FOREIGN KEY (pacote) REFERENCES Pacotes(id),
   FOREIGN KEY (hospedagem) REFERENCES hospedagens(id),
-  FOREIGN KEY (passeios) REFERENCES passeios(id)
+  FOREIGN KEY (passeios) REFERENCES passeios(id),
+  FOREIGN KEY (estilo_voo) REFERENCES EstiloVoo(id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 select * from Compra;
 
 -- INSERTS
+
+INSERT INTO EstiloVoo (Nome, Preco) VALUES 
+	('Econômica', 1000.00), 
+	('Premium Economy', 1500.00), 
+	('Executiva/Business', 3000.00), 
+	('Primeira Classe', 5000.00);
 
 INSERT INTO Pacotes (Lugar, Nome, PrecoBase) VALUES
     ("Califórnia", "Apenas passagem", 1000),
