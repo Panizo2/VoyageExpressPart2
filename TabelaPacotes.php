@@ -32,7 +32,7 @@
                 echo "<td>$lugar</td>";
                 echo "<td>$nome</td>";
                 echo "<td>$precoBase</td>";
-                echo "<td><a href=\"$comprarLink\" class=\"btn btn-outline-secondary btn-sm\">Escolher $nome</a></td>";
+                echo "<td><a href=\"Compra.php?lugar=".urlencode($lugar)."&nome=".urlencode($nome)."&precoBase=".urlencode($precoBase)."\" class=\"btn btn-outline-secondary btn-sm\">Escolher $nome</a></td>";
                 echo "</tr>";
             }
         } else {
